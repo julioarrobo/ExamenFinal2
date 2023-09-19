@@ -19,11 +19,13 @@ public class App {
     private static CoordenadaDAC jaCoo = new CoordenadaDAC();
 
     public static void main(String[] args) throws Exception {
-        // SQLiteDataHelper.jaOpenConnection();
         Utilitario.clear();
-        // iniciarSesion();
-        // Utilitario.jaImpresionDatos(JA_NOMBRE_COMPLET0, JA_CEDULA);
+        iniciarSesion();
+        Utilitario.jaImpresionDatos(JA_NOMBRE_COMPLET0, JA_CEDULA);
         jaLA.jaLeerHorario();
+        Utilitario.jaSistemaCarga();
+
+        //METODOS PARA QUE AL TERMINAR EL SISTEMA SE ELIMINEN LAS ENTIDADES
         // jaHo.jaEliminarTabla();
         // jaAr.jaEliminarTabla();
         // jaCoo.jaEliminarTabla();
